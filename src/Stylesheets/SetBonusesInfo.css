@@ -1,0 +1,8 @@
+.setBonusesInfo {
+    display: flex;
+
+    width: 15%;
+    height: 100%;
+
+    border: 1px solid red;
+}

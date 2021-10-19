@@ -1,0 +1,7 @@
+.spiritParty {
+    display: flex;
+    flex-direction: column;
+
+    width: 5%;
+    height: 100%;
+}
