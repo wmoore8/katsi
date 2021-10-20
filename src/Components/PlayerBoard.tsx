@@ -4,14 +4,13 @@ import SpiritSlot from "./Spirit/SpiritSlot";
 import SetBonusesInfo from "./SetBonusesInfo";
 import SpiritParty from "./Spirit/SpiritParty";
 
-const PlayerBoard = () => {
-
+const PlayerBoard = ({spiritIds}) => {
+    console.error(spiritIds);
     return (
         <div className="playerBoard">
             <SpiritParty/>
             <SetBonusesInfo/>
-            <SpiritSlot/>
-            <SpiritSlot/>
+            {spiritIds.map(spiritId => (<SpiritSlot spiritId={spiritId}/>))}
         </div>
     )
 }
